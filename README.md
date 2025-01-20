@@ -2,6 +2,7 @@
 A custom Typst template repository containing a sound structure for writing papers, theses, documentations, etc.  
 This template has been created through a mixture of code from many sources and has been adapted to my liking.  
 For more information on Typst, how to use it and integrate extra components like graphs, tables, etc. visit the official [Typst](https://typst.app) website.  
+A GitHub Worker has been setup to compile and release the newest version and will be run with every push to origin.  
 An example of the output can be seen in the **Releases** section.  
 
 ## Usage
