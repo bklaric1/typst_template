@@ -6,13 +6,14 @@ A GitHub Worker has been set up to compile and release the newest version and wi
 An example of the output can be seen in the **Releases** section.  
 
 ## Usage
-To install Typst, it is recommended to follow the instructions of the official [Typst GitHub repository](https://github.com/typst/typst.git).  
+To install Typst, it is recommended to follow the instructions of the official [Typst GitHub repository](https://github.com/typst/typst.git).  
 To compile the document and generate a .pdf file, simply run:
 ```bash
 typst compile paper.typ <name.pdf>
 ``` 
-This generates a *name.pdf* file from the written content. When not specifying the name, a document with a name *paper.pdf* will be generated.
-If you prefer to work parallel with the document on one half of the screen or other monitor, a different command is more useful. Executing the following command literally watches the input file (paper.typ) and recompiles on changes or rather when saving, providing a live view of the changes without the need to compile manually every time. The command is as follows:
+This generates a *name.pdf* file from the written content. When not specifying the name, a document with a name *paper.pdf* will be generated.  
+If you prefer to work parallel with the document on one half of the screen or other monitor, a different command is more useful. Executing the following command literally watches the input file (paper.typ) and recompiles on changes or rather when saving, providing a live view of the changes without the need to compile manually every time.  
+The command is as follows:
 ```bash
 typst watch paper.typ <name.pdf>
 ``` 
