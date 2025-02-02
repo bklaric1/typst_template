@@ -21,8 +21,10 @@ typst watch paper.typ <name.pdf>
 ## Remarks
 Since I prefer that every new text section has an indent, I configured the document to include it.  
 There is however one small problem. Typst doesn't fully support this, meaning without bugs, therefore some extra configuration/correction is required.  
-Let me explain: after an image, list, etc. the text is not indented. This is still an open issue on Typst GitHub, and users have presented many "fixes" for this. However, I have found only putting ``#{ "   " }`` between, for example, an image and the text following it, without new lines, to solve this issue. The indentation is not always 100% corresponding to the default indentation, but adding/removing spaces inside the brackets makes this a very flexible solution to this issue.  
+Let me explain: after an image, list, etc. the text is not indented. This is still an open issue on Typst GitHub, and users have presented many "fixes" for this.  
+However, I have found only putting ``#{ "   " }`` without new lines, between a list and text, and ``\`` with new lines before and after it, for image and the text following it, to solve this issue.  
+The indentation is not always 100% corresponding to the default indentation, but adding/removing spaces inside the brackets makes this a very flexible solution to this issue.  
 
 When referencing sources, they are always shown as errors, since Typst can't find them in the current document (since they are not directly included in each .typ file). This is however only a visual annoyance, and doesn't affect referencing in any way.  
 
-This template uses my preferred fonts, and when compiling will cause a warning to be thrown by Typst compiler. This can be safely ignored.  
+This template uses my preferred fonts, and when compiling will cause a warning to be thrown by Typst compiler. This can be safely ignored.
